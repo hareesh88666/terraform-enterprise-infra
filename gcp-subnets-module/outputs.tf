@@ -12,3 +12,9 @@ output "subnet_names" {
   description = "List of subnet names created"
   value = keys(google_compute_subnetwork.this)
 }
+output "subnetwork_self_links" {
+  value = {
+    for s in google_compute_subnetwork.subnets :
+    s.name => s.self_link
+  }
+}
