@@ -1,1 +1,0 @@
-# modules/rds module placeholder
