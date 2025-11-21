@@ -1,1 +1,0 @@
-# environments/qa module placeholder
